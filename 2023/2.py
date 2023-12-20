@@ -17,13 +17,11 @@ def find_number(string):
 def find_second_number(string):
     number = find_number(string)
     ## there is no None check here because we know there is a number in the string
-    print(number)
     if not number.isdigit():
         return number[::-1]
     return number
 
 def resolve_calibration_value(calib):
-    print(calib)
     first_number = find_number(calib)
     if first_number is None or not first_number:
         return 0
