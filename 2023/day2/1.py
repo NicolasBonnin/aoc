@@ -11,19 +11,15 @@ def get_number_from_string(string):
 
 def source_dice_hand(hand):
     for dice in hand.split(','):
-        print(dice)
         quantity = get_number_from_string(dice)
         if ("red" in dice):
             if quantity > MAX_RED:
-                print(quantity)
                 return True
         elif ("green" in dice):
             if quantity > MAX_GREEN:
-                print(quantity)
                 return True
         elif ("blue" in dice):
             if quantity > MAX_BLUE:
-                print(quantity)
                 return True
     return False
 
@@ -36,9 +32,6 @@ for game in input_file.readlines():
         if source_dice_hand(hand):
             impossible = True
             break
-
-    print(impossible)
-    print(game_id)
     game_id_total_value += 0 if impossible else game_id
 
 print(game_id_total_value)
