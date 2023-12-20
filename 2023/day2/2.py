@@ -1,9 +1,5 @@
 input_file = open('resources/input.txt', 'r')
 
-MAX_RED = 12
-MAX_GREEN = 13
-MAX_BLUE = 14
-
 def get_number_from_string(string):
     return [int(s) for s in string.split() if s.isdigit()][0]
 
