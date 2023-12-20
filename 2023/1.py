@@ -1,4 +1,4 @@
-input_file = open('input.txt', 'r')
+input_file = open('resources/input.txt', 'r')
 
 calibration_values = input_file.readlines()
 
